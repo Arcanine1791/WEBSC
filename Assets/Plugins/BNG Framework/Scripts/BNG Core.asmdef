@@ -1,0 +1,17 @@
+{
+    "name": "BNGCore",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:244849d9b658ab3478f39d379702fb73",
+        "GUID:e1839273934490846bd0260caf67ba95"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
