@@ -4,6 +4,13 @@ public class MirrorRotate : MonoBehaviour
 {
     [SerializeField] private Transform m_Transform;
     bool rotate;
+    public BoxCollider[] bxc = new BoxCollider[2];
+
+    private void Update()
+    {
+        bxc[1].enabled = true;
+        bxc[0].enabled = true;
+    }
     public void MirorRotat()
     {
         rotate = !rotate;

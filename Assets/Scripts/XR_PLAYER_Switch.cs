@@ -37,10 +37,8 @@ public class XR_PLAYER_Switch : MonoBehaviour
             check = false;
         }
         
-        if (dd.activeMessage == 3)
-        {
-            if (hc.PreviousHeldObject != null)
-                tutorial.gameObject.SetActive(false);
-        }
+        if (tutorial.gameObject.activeSelf && hc.PreviousHeldObject != null)
+            tutorial.gameObject.SetActive(false);
+        
     }
 }
