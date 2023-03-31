@@ -11,7 +11,7 @@ public class ButtonInfo
     public Texture2D image;
 }
 
-[CreateAssetMenu(fileName = "Panel", menuName = "UIPanels")]
+[CreateAssetMenu(fileName = "Panel", menuName = "UIPanels/Subjects")]
 public class ButtonHolder : ScriptableObject
 {
     public List<ButtonInfo> subjects;

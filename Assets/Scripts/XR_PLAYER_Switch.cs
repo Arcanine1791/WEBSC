@@ -1,32 +1,41 @@
 using UnityEngine;
 using BNG;
+using System.Linq;
+using UnityEngine.UI;
 
 public class XR_PLAYER_Switch : MonoBehaviour
 {
-    public Transform environment, XR_Config, tutorial, ExperimentZone,Lightt;
+    public Transform environment, XR_Config, tutorial, ExperimentZone,roomLight,labLight,props;
+
+    [Space(5)]
     public CharacterController cc;
     public DialogueManger dd;
     public HandController hc;
-
+    RoomConstructionValidator RCV;
     bool check = true;
+    public Text mirror_M;
+    Light spotLight;
+    bool lightState = true;
 
+    private void Awake()
+    {
+        RCV = GetComponent<RoomConstructionValidator>();
+    }
+    private void Start()
+    {
+        spotLight = roomLight.GetComponentInChildren<Light>();
+    }
     void Update()
     {
         if(InputBridge.Instance.AButton)
         {
-            cc.enabled = false;
-            environment.localScale = new Vector3(5, 5, 5);
-            XR_Config.position = new Vector3(-1.5f, 3.96f, -11.23f);
-            Lightt.gameObject.SetActive(true);
-            //XR_Config.position = Vector3.MoveTowards(XR_Config.position, new Vector3(-1.5f, 3.96f, -11.23f), 1f);
+            Teleport();
         }
         if(InputBridge.Instance.BButton)
         {
-            environment.localScale = new Vector3(1, 1, 1);
-            XR_Config.position = new Vector3(0, 0, 0);
-            cc.enabled = true;
-            Lightt.gameObject.SetActive(false);
+            Deport();
         }
+
         if(dd.activeMessage >= 1)
             ExperimentZone.gameObject.SetActive(true);
 
@@ -40,5 +49,41 @@ public class XR_PLAYER_Switch : MonoBehaviour
         if (tutorial.gameObject.activeSelf && hc.PreviousHeldObject != null)
             tutorial.gameObject.SetActive(false);
         
+    }
+    public void Teleport()
+    {
+        cc.enabled = false;
+        environment.localScale = new Vector3(5, 5, 5);
+        XR_Config.position = new Vector3(-1f, 4f, -11f);
+        roomLight.gameObject.SetActive(true);
+        labLight.gameObject.SetActive(false);
+        props.gameObject.SetActive(true);
+        mirror_M.enabled = false;
+        foreach (var grabbable in RCV.snapZone)
+        {
+            grabbable.CanRemoveItem = false;
+            grabbable.CanSwapItem = false;
+        }
+    }
+    public void Deport()
+    {
+        environment.localScale = new Vector3(1, 1, 1);
+        XR_Config.position = new Vector3(0, 0, 0);
+        cc.enabled = true;
+        roomLight.gameObject.SetActive(false);
+        labLight.gameObject.SetActive(true);
+        props.gameObject.SetActive(false);
+        mirror_M.enabled = true;
+        foreach (var grabbable in RCV.snapZone)
+        {
+            grabbable.CanRemoveItem = true;
+            grabbable.CanSwapItem = true;
+        }
+    }
+
+    public void RoomLightToggle()
+    {
+        lightState = !lightState;
+        spotLight.gameObject.SetActive(lightState);
     }
 }

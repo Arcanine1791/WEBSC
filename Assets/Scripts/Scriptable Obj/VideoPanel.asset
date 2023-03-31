@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0308ccc91a6f954cb1c73ea596aa70b, type: 3}
+  m_Name: VideoPanel
+  m_EditorClassIdentifier: 
+  chapters:
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: b0e4843044f0cc74cad34a6a60f6d767, type: 3}
+    chapterNo: 1
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: 599518bb597e12245abbab31bdadb604, type: 3}
+    chapterNo: 2
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: 6350bea566ae2504ebc8b63bc17c260d, type: 3}
+    chapterNo: 3
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: 84a801abbbdf9874db221517bc4a8ba9, type: 3}
+    chapterNo: 4
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: 6dbe1ffea619f9a4693e615b2b8b7d6a, type: 3}
+    chapterNo: 5
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: a5428f7a4e3b01445be0eb84a95f9b27, type: 3}
+    chapterNo: 6
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: acc217be2c842194bb142e5221f00689, type: 3}
+    chapterNo: 7
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: f992aec1e19547747bb653c1dbb0000d, type: 3}
+    chapterNo: 8
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: 8773cfe8bd2c67645990b1b8662a096b, type: 3}
+    chapterNo: 9
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: 40be814b63c205a48a5e435ead6e912f, type: 3}
+    chapterNo: 10
+  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+      type: 3}
+    videoImg: {fileID: 32900000, guid: 6af3179ff35f2d64db45cc0bdfc4f45e, type: 3}
+    chapterNo: 11

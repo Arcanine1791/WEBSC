@@ -2,21 +2,28 @@ using UnityEngine;
 
 public class MirrorRotate : MonoBehaviour
 {
-    [SerializeField] private Transform m_Transform;
-    bool rotate;
-    public BoxCollider[] bxc = new BoxCollider[2];
+    [SerializeField] private Transform m_Mirror;
+    //bool rotate = true;
+    public BoxCollider bxc;
 
     private void Update()
     {
-        bxc[1].enabled = true;
-        bxc[0].enabled = true;
+        bxc.enabled = true;
+
+        //    if (rotate)
+        //        m_Mirror.Rotate(new Vector3(0, 180, 0));
+        //    if (!rotate)
+        //        m_Mirror.Rotate(new Vector3(0, 0, 0));
     }
-    public void MirorRotat()
+    public void MirorRotat(string buttonName)
     {
-        rotate = !rotate;
-        if (rotate)
-            m_Transform.Rotate(new Vector3(0, 180, 0));
-        if (!rotate)
-            m_Transform.Rotate(new Vector3(0, 0, 0));
+        if(buttonName == "Button")
+        {
+            m_Mirror.Rotate(new Vector3(0, 180, 0));
+        }
+        if(buttonName == "Button 1")
+        {
+            m_Mirror.Rotate(new Vector3(0, 0, 0));
+        }
     }
 }
