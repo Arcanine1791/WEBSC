@@ -15,7 +15,8 @@ public class VideoPanelManager : MonoBehaviour
         {
             videoo = Instantiate(xyz.videoBtn, transform);
             videoo.GetComponentInChildren<Text>().text = xyz.chapterNo.ToString();
-            videoo.onClick.AddListener(() => CheckWhichClickedVideo(xyz.videoImg));
+            videoo.GetComponent<Image>().sprite = xyz.thumbnail;
+            videoo.onClick.AddListener(() => CheckWhichClickedVideo(xyz.video));
         }
     }
 

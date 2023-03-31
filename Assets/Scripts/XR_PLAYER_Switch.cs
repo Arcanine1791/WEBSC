@@ -8,9 +8,9 @@ public class XR_PLAYER_Switch : MonoBehaviour
     public Transform environment, XR_Config, tutorial, ExperimentZone,roomLight,labLight,props;
 
     [Space(5)]
-    public CharacterController cc;
-    public DialogueManger dd;
-    public HandController hc;
+    public CharacterController characterController;
+    public DialogueManger dialogueManager;
+    public HandController handController;
     RoomConstructionValidator RCV;
     bool check = true;
     public Text mirror_M;
@@ -36,23 +36,23 @@ public class XR_PLAYER_Switch : MonoBehaviour
             Deport();
         }
 
-        if(dd.activeMessage >= 1)
+        if(dialogueManager.activeMessage >= 1)
             ExperimentZone.gameObject.SetActive(true);
 
         
-        if(dd.activeMessage >= 3 && check)
+        if(dialogueManager.activeMessage >= 3 && check)
         {
             tutorial.gameObject.SetActive(true);
             check = false;
         }
         
-        if (tutorial.gameObject.activeSelf && hc.PreviousHeldObject != null)
+        if (tutorial.gameObject.activeSelf && handController.PreviousHeldObject != null)
             tutorial.gameObject.SetActive(false);
         
     }
     public void Teleport()
     {
-        cc.enabled = false;
+        characterController.enabled = false;
         environment.localScale = new Vector3(5, 5, 5);
         XR_Config.position = new Vector3(-1f, 4f, -11f);
         roomLight.gameObject.SetActive(true);
@@ -69,7 +69,7 @@ public class XR_PLAYER_Switch : MonoBehaviour
     {
         environment.localScale = new Vector3(1, 1, 1);
         XR_Config.position = new Vector3(0, 0, 0);
-        cc.enabled = true;
+        characterController.enabled = true;
         roomLight.gameObject.SetActive(false);
         labLight.gameObject.SetActive(true);
         props.gameObject.SetActive(false);

@@ -13,47 +13,58 @@ MonoBehaviour:
   m_Name: VideoPanel
   m_EditorClassIdentifier: 
   chapters:
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 1
+    video: {fileID: 32900000, guid: b0e4843044f0cc74cad34a6a60f6d767, type: 3}
+    thumbnail: {fileID: 21300000, guid: 9cb28c7a7b77f7745be3f8cb364d49a2, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: b0e4843044f0cc74cad34a6a60f6d767, type: 3}
-    chapterNo: 1
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 2
+    video: {fileID: 32900000, guid: 599518bb597e12245abbab31bdadb604, type: 3}
+    thumbnail: {fileID: 21300000, guid: b3e06299f653e454ab56ea0cdd775bce, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: 599518bb597e12245abbab31bdadb604, type: 3}
-    chapterNo: 2
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 3
+    video: {fileID: 32900000, guid: 6350bea566ae2504ebc8b63bc17c260d, type: 3}
+    thumbnail: {fileID: 21300000, guid: c214523d9c918af41ac6d5e07c979e22, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: 6350bea566ae2504ebc8b63bc17c260d, type: 3}
-    chapterNo: 3
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 4
+    video: {fileID: 32900000, guid: 84a801abbbdf9874db221517bc4a8ba9, type: 3}
+    thumbnail: {fileID: 21300000, guid: 2d00caa85e1880348aa06f2e9fc47e9e, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: 84a801abbbdf9874db221517bc4a8ba9, type: 3}
-    chapterNo: 4
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 5
+    video: {fileID: 32900000, guid: 6dbe1ffea619f9a4693e615b2b8b7d6a, type: 3}
+    thumbnail: {fileID: 21300000, guid: b36ee734554108240b255398e8b7caba, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: 6dbe1ffea619f9a4693e615b2b8b7d6a, type: 3}
-    chapterNo: 5
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 6
+    video: {fileID: 32900000, guid: a5428f7a4e3b01445be0eb84a95f9b27, type: 3}
+    thumbnail: {fileID: 21300000, guid: 69c19d1b8434317408e3aa118e3f6b40, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: a5428f7a4e3b01445be0eb84a95f9b27, type: 3}
-    chapterNo: 6
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 7
+    video: {fileID: 32900000, guid: acc217be2c842194bb142e5221f00689, type: 3}
+    thumbnail: {fileID: 21300000, guid: d479f746b2e51ac4fad57326745dfc3a, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: acc217be2c842194bb142e5221f00689, type: 3}
-    chapterNo: 7
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 8
+    video: {fileID: 32900000, guid: f992aec1e19547747bb653c1dbb0000d, type: 3}
+    thumbnail: {fileID: 21300000, guid: b10f54321f1aa0f44892e40654870bda, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: f992aec1e19547747bb653c1dbb0000d, type: 3}
-    chapterNo: 8
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 9
+    video: {fileID: 32900000, guid: 8773cfe8bd2c67645990b1b8662a096b, type: 3}
+    thumbnail: {fileID: 21300000, guid: 1c22cd42febf5274f9bf945717e11fff, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: 8773cfe8bd2c67645990b1b8662a096b, type: 3}
-    chapterNo: 9
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 10
+    video: {fileID: 32900000, guid: 40be814b63c205a48a5e435ead6e912f, type: 3}
+    thumbnail: {fileID: 21300000, guid: cb1d410137a44bc4f95f7348028f4ef4, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: 40be814b63c205a48a5e435ead6e912f, type: 3}
-    chapterNo: 10
-  - videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
+  - chapterNo: 11
+    video: {fileID: 32900000, guid: 6af3179ff35f2d64db45cc0bdfc4f45e, type: 3}
+    thumbnail: {fileID: 21300000, guid: f1a8a237a0c1c8d4f947ea617a537b63, type: 3}
+    videoBtn: {fileID: 7777010452767368317, guid: 50ffbea6f2cad234cadaf842188515dd,
       type: 3}
-    videoImg: {fileID: 32900000, guid: 6af3179ff35f2d64db45cc0bdfc4f45e, type: 3}
-    chapterNo: 11

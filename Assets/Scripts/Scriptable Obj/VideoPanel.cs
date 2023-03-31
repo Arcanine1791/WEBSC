@@ -6,9 +6,10 @@ using UnityEngine.Video;
 [System.Serializable]
 public class VideoInfo
 {
-    public Button videoBtn;
-    public VideoClip videoImg;
     public int chapterNo;
+    public VideoClip video;
+    public Sprite thumbnail;
+    public Button videoBtn;
 }
 [CreateAssetMenu(fileName = "VideoPanel", menuName = "UIPanels/Video")]
 public class VideoPanel : ScriptableObject
