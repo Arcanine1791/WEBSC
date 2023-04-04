@@ -5,7 +5,7 @@ public class PanelManager : MonoBehaviour
 {
     public ButtonHolder buttons;
     public Text tx;
-    public GameObject videoPanel,subjectPanel;
+    public GameObject videoPanel,subjectPanel,experimentZone,startButton;
 
     private void Start()
     {
@@ -27,7 +27,9 @@ public class PanelManager : MonoBehaviour
             case "Physics":
                 tx.text = "Physics";
                 videoPanel.SetActive(true);
+                experimentZone.SetActive(true);
                 subjectPanel.SetActive(false);
+                startButton.SetActive(true);
                 break;
 
             case "Chemistry":
