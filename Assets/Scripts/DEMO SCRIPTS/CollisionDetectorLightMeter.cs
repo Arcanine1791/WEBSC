@@ -13,4 +13,13 @@ public class CollisionDetectorLightMeter : MonoBehaviour
             lightRay.enabled = true;
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.name == "Plane (4)")
+        {
+            lightMeter.SetActive(false);
+            detector.SetActive(false);
+            lightRay.enabled = false;
+        }
+    }
 }

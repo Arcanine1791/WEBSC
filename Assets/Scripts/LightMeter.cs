@@ -24,7 +24,8 @@ public class LightMeter : MonoBehaviour
             if(hit.collider.tag == "Detecter")
             {
                 length = hit.distance;
-                readingText.text = (length * 100).ToString("0");
+                float disttt = 1 / length;
+                readingText.text = (disttt * 100).ToString("0");
                 //lineRendererEnd.position = new Vector3(lineRendererEnd.position.x, lineRendererEnd.position.y, hit.distance);
             }
         }
