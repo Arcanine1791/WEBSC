@@ -14,6 +14,10 @@ public class CircularMenu : MonoBehaviour
             Debug.Log(" open Menu");
             circleS.Open();
         }
+        if (InputBridge.Instance.YButton || Input.GetKeyDown(KeyCode.H))
+        {
+            circleS.Close();
+        }
     }
 
     public void Press1()

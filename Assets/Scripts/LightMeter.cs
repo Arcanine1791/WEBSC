@@ -3,9 +3,14 @@ using TMPro;
 
 public class LightMeter : MonoBehaviour
 {
+    LineRenderer lightRay;
     public Transform lineRendererStart,lineRendererEnd,detecter;
     public float length, dist;
     RaycastHit hit;
+    private void Start()
+    {
+        lightRay = GetComponent<LineRenderer>();
+    }
     void Update()
     {
 
@@ -19,7 +24,7 @@ public class LightMeter : MonoBehaviour
             if(hit.collider.tag == "Detecter")
             {
                 length = hit.distance;
-                readingText.text = (length * 100).ToString("0.00");
+                readingText.text = (length * 100).ToString("0");
                 //lineRendererEnd.position = new Vector3(lineRendererEnd.position.x, lineRendererEnd.position.y, hit.distance);
             }
         }

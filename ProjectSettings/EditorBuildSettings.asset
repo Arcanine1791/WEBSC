@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Final Scenes/School WebXR.unity
-    guid: d28ff4f203362f044beefca8ab9f08e8
+    path: Assets/Scenes/Final Scenes/School Demo.unity
+    guid: c9b464d5b6e322246bd359eb2febb7bd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
