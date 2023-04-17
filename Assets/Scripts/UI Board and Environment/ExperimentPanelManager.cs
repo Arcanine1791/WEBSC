@@ -25,6 +25,8 @@ public class ExperimentPanelManager : MonoBehaviour
         for (int i = 0; i < experiments.Length; i++)
         {
             experiments[i].SetActive(false);
+
+
             if (i == experimentNumber)
             {
                 experiments[i].SetActive(true);

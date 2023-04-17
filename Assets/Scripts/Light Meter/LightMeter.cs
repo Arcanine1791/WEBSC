@@ -14,11 +14,10 @@ public class LightMeter : MonoBehaviour
     }
     void Update()
     {
-
         //lineRender();
 
         Ray rr = new Ray(lineRendererStart.position, lineRendererStart.forward);
-        Debug.DrawRay(lineRendererStart.position, lineRendererStart.forward * dist , Color.red);
+        Debug.DrawRay(lineRendererStart.position, lineRendererStart.forward * dist , Color.yellow);
 
         if(Physics.Raycast(rr,out hit))
         {

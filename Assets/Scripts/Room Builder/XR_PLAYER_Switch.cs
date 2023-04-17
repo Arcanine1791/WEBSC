@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class XR_PLAYER_Switch : MonoBehaviour
 {
     public Transform environment, XR_Config, tutorial, ExperimentZone,roomLight,labLight,props;
+    public Transform teleportedPosition,deportedPosition;
 
     [Space(5)]
     public CharacterController characterController;
@@ -54,7 +55,7 @@ public class XR_PLAYER_Switch : MonoBehaviour
     {
         characterController.enabled = false;
         environment.localScale = new Vector3(5, 5, 5);
-        XR_Config.position = new Vector3(-1f, 4f, -11f);
+        XR_Config.position = teleportedPosition.position;
         roomLight.gameObject.SetActive(true);
         labLight.gameObject.SetActive(false);
         props.gameObject.SetActive(true);
@@ -68,7 +69,7 @@ public class XR_PLAYER_Switch : MonoBehaviour
     public void Deport()
     {
         environment.localScale = new Vector3(1, 1, 1);
-        XR_Config.position = new Vector3(0, 0, 0);
+        XR_Config.position = deportedPosition.position;
         characterController.enabled = true;
         roomLight.gameObject.SetActive(false);
         labLight.gameObject.SetActive(true);
