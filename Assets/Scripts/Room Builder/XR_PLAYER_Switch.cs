@@ -15,7 +15,7 @@ public class XR_PLAYER_Switch : MonoBehaviour
     RoomConstructionValidator RCV;
     bool check = true;
     public Text mirror_M;
-    Light spotLight;
+    public Light spotLight;
     bool lightState = true;
 
     private void Awake()
@@ -24,18 +24,18 @@ public class XR_PLAYER_Switch : MonoBehaviour
     }
     private void Start()
     {
-        spotLight = roomLight.GetComponentInChildren<Light>();
+        //spotLight = roomLight.GetComponentInChildren<Light>();
     }
     void Update()
     {
-        if(InputBridge.Instance.AButton)
-        {
-            Teleport();
-        }
-        if(InputBridge.Instance.BButton)
-        {
-            Deport();
-        }
+        //if(InputBridge.Instance.AButton)
+        //{
+        //    Teleport();
+        //}
+        //if(InputBridge.Instance.BButton)
+        //{
+        //    Deport();
+        //}
 
         if(dialogueManager.activeMessage >= 1)
             ExperimentZone.gameObject.SetActive(true);

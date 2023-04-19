@@ -6,6 +6,7 @@ public class RoomConstructionValidator : MonoBehaviour
 {
     public GameObject room,teleportButton,mirrorRotateButton,deportButton;
     [HideInInspector]public SnapZone[] snapZone;
+
     private void Start()
     {
         snapZone = room.GetComponentsInChildren<SnapZone>();
