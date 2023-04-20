@@ -113,9 +113,9 @@ public class MirrorPainting : GrabbableEvents
             lastTransform.name = "DrawLine";
             if (root == null)
             {
-                root = glassParent.transform;
-                //root = new GameObject().transform;
-                //root.name = "MarkerLineHolder";
+                //root = glassParent.transform;
+                root = new GameObject().transform;
+                root.name = "MarkerLineHolder";
             }
             lastTransform.parent = root;
             lastTransform.position = endPosition;

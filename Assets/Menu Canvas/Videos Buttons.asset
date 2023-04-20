@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fdc8837ff0936a48a0423b0cd123c21, type: 3}
+  m_Name: Videos Buttons
+  m_EditorClassIdentifier: 
+  buttons:
+  - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
+      type: 3}
+    _name: Lesson 1
+    _image: {fileID: 21300000, guid: 9cb28c7a7b77f7745be3f8cb364d49a2, type: 3}
+    clip: {fileID: 32900000, guid: b0e4843044f0cc74cad34a6a60f6d767, type: 3}
+  - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
+      type: 3}
+    _name: Lesson 2
+    _image: {fileID: 21300000, guid: b3e06299f653e454ab56ea0cdd775bce, type: 3}
+    clip: {fileID: 32900000, guid: 599518bb597e12245abbab31bdadb604, type: 3}
+  - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
+      type: 3}
+    _name: Lesson 3
+    _image: {fileID: 21300000, guid: c214523d9c918af41ac6d5e07c979e22, type: 3}
+    clip: {fileID: 32900000, guid: 6350bea566ae2504ebc8b63bc17c260d, type: 3}
+  - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
+      type: 3}
+    _name: Lesson 4
+    _image: {fileID: 21300000, guid: 2d00caa85e1880348aa06f2e9fc47e9e, type: 3}
+    clip: {fileID: 32900000, guid: 84a801abbbdf9874db221517bc4a8ba9, type: 3}
+  - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
+      type: 3}
+    _name: Lesson 4
+    _image: {fileID: 21300000, guid: b36ee734554108240b255398e8b7caba, type: 3}
+    clip: {fileID: 32900000, guid: 6dbe1ffea619f9a4693e615b2b8b7d6a, type: 3}
+  - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
+      type: 3}
+    _name: Lesson 4
+    _image: {fileID: 21300000, guid: 69c19d1b8434317408e3aa118e3f6b40, type: 3}
+    clip: {fileID: 32900000, guid: a5428f7a4e3b01445be0eb84a95f9b27, type: 3}
+  - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
+      type: 3}
+    _name: Lesson 4
+    _image: {fileID: 21300000, guid: d479f746b2e51ac4fad57326745dfc3a, type: 3}
+    clip: {fileID: 32900000, guid: acc217be2c842194bb142e5221f00689, type: 3}
