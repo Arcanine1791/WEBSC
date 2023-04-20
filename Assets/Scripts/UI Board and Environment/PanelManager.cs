@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class PanelManager : MonoBehaviour
 {
     public ButtonHolder buttons;
-    public Text tx;
+   // public Text tx;
     public GameObject subjectPanel,experimentPanel,experimentZone,startButton,Tutor;
 
     private void Start()
@@ -25,7 +25,7 @@ public class PanelManager : MonoBehaviour
         switch (name)
         {
             case "Physics":
-                tx.text = "Physics";
+               // tx.text = "Physics";
                 //videoPanel.SetActive(true);
                 experimentPanel.SetActive(true);
                 experimentZone.SetActive(true);
@@ -35,11 +35,11 @@ public class PanelManager : MonoBehaviour
                 break;
 
             case "Chemistry":
-                tx.text = "Chemistry";
+                //tx.text = "Chemistry";
                 break;
 
             default:
-                tx.text = "Invalid";
+               // tx.text = "Invalid";
                 break;
 
         }

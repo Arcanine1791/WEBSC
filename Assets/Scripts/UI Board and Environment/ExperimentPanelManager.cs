@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ExperimentPanelManager : MonoBehaviour
 {
-    public GameObject videoPanel,experimentPanel,lightMeterDetector;
+    public GameObject videoPanel1,videoPanel2,videoPanel3,experimentPanel,lightMeterDetector;
     public GameObject[] experiments;
     [Space(10)]
     public ExperimentList experimentScriptableObj;
@@ -17,6 +17,7 @@ public class ExperimentPanelManager : MonoBehaviour
             expBtn.GetComponentInChildren<Text>().text = exp.experimentNo.ToString();
             expBtn.GetComponent<Image>().sprite = exp.expThumbnail;
             expBtn.onClick.AddListener(()=>ActiveExperimentSelection(exp.experimentNo));
+            expBtn.onClick.AddListener(()=> VideoPlayerSelectionFunctionTemporary(exp.experimentNo));
         }
     }
 
@@ -40,10 +41,34 @@ public class ExperimentPanelManager : MonoBehaviour
                     lightMeterDetector.SetActive(false);
                     lightMeterScript.lineRenderer.enabled = false;
                 }
-                videoPanel.SetActive(true);
                 experimentPanel.SetActive(false);
                 break;
             }
+        }
+    }
+
+    public void VideoPlayerSelectionFunctionTemporary(int experimentNumber)
+    {
+        if (experimentNumber == 0)
+        {
+            videoPanel1.SetActive(true);
+            videoPanel2.SetActive(false);
+            videoPanel3.SetActive(false);
+
+        }
+        if (experimentNumber == 1)
+        {
+            videoPanel1.SetActive(false);
+            videoPanel2.SetActive(true);
+            videoPanel3.SetActive(false);
+
+        }
+        if (experimentNumber == 2)
+        {
+            videoPanel1.SetActive(false);
+            videoPanel2.SetActive(false);
+            videoPanel3.SetActive(true);
+
         }
     }
 }
