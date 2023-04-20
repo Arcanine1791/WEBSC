@@ -7,13 +7,14 @@ public class RoomConstructionValidator : MonoBehaviour
     public GameObject room,teleportButton,mirrorRotateButton,deportButton;
     [HideInInspector]public SnapZone[] snapZone;
 
+    bool isSkipped = false;
     private void Start()
     {
         snapZone = room.GetComponentsInChildren<SnapZone>();
     }
     void Update()
     {
-        if (isConstructed())
+        if (isConstructed() || isSkipped)
         {
             teleportButton.SetActive(true);
             mirrorRotateButton.SetActive(true);
@@ -29,5 +30,9 @@ public class RoomConstructionValidator : MonoBehaviour
     public bool isConstructed()
     {
         return Array.TrueForAll(snapZone, snap => snap.HeldItem != null);
+    }
+    public void IsSkipped()
+    {
+       isSkipped = true;
     }
 }

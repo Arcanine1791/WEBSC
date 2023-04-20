@@ -3,20 +3,12 @@ using UnityEngine;
 
 public class SkipBtnActivator : MonoBehaviour
 {
-    public SnapZone[] ss;
-    public GameObject wallPrefab;
-    private void Start()
+    public SnapZone mirrorSnapZone;
+    public GameObject skipButton;
+    private void Update()
     {
-        ss = GetComponentsInChildren<SnapZone>();
+        if(mirrorSnapZone.HeldItem != null) {skipButton.SetActive(true);}
+        else { skipButton.SetActive(false); }
     }
-    public void skipOperation()
-    {
-        for(int i=0; i<ss.Length; i++)
-        {
-            if (ss[i].HeldItem == null)
-            {
-                Instantiate(wallPrefab, ss[i].gameObject.transform);
-            }
-        }
-    }
+    
 }
