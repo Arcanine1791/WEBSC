@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class PropsLightIntensitySlider : MonoBehaviour
 {
+    public MeshRenderer forReflectionRenderMaterial;
     public Light propsRoomLight;
     Slider slider;
     private void Start()
@@ -12,5 +13,6 @@ public class PropsLightIntensitySlider : MonoBehaviour
     void Update()
     {
         propsRoomLight.intensity = slider.value * 10;
+        forReflectionRenderMaterial.material.color = new Color(255,255,255,slider.value * 255);
     }
 }
