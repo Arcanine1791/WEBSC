@@ -17,17 +17,12 @@ MonoBehaviour:
       type: 3}
     _name: Lesson 1
     _image: {fileID: 21300000, guid: 9cb28c7a7b77f7745be3f8cb364d49a2, type: 3}
-    clip: {fileID: 32900000, guid: b0e4843044f0cc74cad34a6a60f6d767, type: 3}
+    clip: {fileID: 32900000, guid: 6c0c2397c26f21e489c2b34eaef926ff, type: 3}
   - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
       type: 3}
     _name: Lesson 2
     _image: {fileID: 21300000, guid: b3e06299f653e454ab56ea0cdd775bce, type: 3}
-    clip: {fileID: 32900000, guid: b0e4843044f0cc74cad34a6a60f6d767, type: 3}
-  - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
-      type: 3}
-    _name: Lesson 2
-    _image: {fileID: 21300000, guid: b3e06299f653e454ab56ea0cdd775bce, type: 3}
-    clip: {fileID: 32900000, guid: b0e4843044f0cc74cad34a6a60f6d767, type: 3}
+    clip: {fileID: 32900000, guid: a3712121f882eee4f9bf83479ed3059d, type: 3}
   - _button: {fileID: 6128794630472175078, guid: 7601643c20ec12544a4b2e2ef5aae54f,
       type: 3}
     _name: Lesson 2
