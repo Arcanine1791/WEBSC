@@ -91,8 +91,7 @@ namespace BNG {
             if (IsNewDraw || LineRenderer == null) {
                 lastTransform = new GameObject().transform;
                 lastTransform.name = "DrawLine";
-                if (root == null) 
-                {
+                if (root == null) {
                     root = new GameObject().transform;
                     root.name = "MarkerLineHolder";
                 }
